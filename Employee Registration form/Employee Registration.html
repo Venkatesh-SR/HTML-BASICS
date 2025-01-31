@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link rel="icon" href="reg.png">
+    <link rel="stylesheet" href="Employee Registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2 id="title">Employee Registration</h2>
+    <section id="registration-form">
+        <form id="full form">
+        <fieldset class="personal-info">
+            <legend><h3>Personal Information</h3></legend>
+            <!-- <form id="personal-info-form" > -->
+                <label for="first-name">First Name <span>*</span> <br>
+                    <input type="text" id="first-name" class="input-field" placeholder="Enter first name" required>
+                </label><br>
+      
+                <label for="last-name">Last Name <span  >*</span> <br>
+                    <input type="text" id="last-name" class="input-field" placeholder="Enter last name" required>
+                </label><br>
+            
+                <label for="email">Email <span  >*</span> <br>
+                    <input type="email" id="email" class="input-field" placeholder="Enter email address" required>
+                </label><br>
+                <small class="note">Example: john.doe@example.com</small><br>
+
+                <label for="phone-number">Phone Number <span  >*</span><br>
+                    <input type="number" id="phone-number" class="input-field" placeholder="Enter phone number" pattern="^\d{10}$" required>
+                </label><br>
+
+                <label>Gender <span  >*</span><br>
+                    <input type="radio" name="gender" value="Male" required>Male
+                    <input type="radio" name="gender" value="Female" required>Female
+                    <input type="radio" name="gender" value="Other" required>Other
+                </label><br>
+
+                <label for="dob">Date of Birth <span  >*</span><br>
+                    <input type="date" id="dob" class="input-field" required>
+                </label><br>
+
+                <label>Marital Status <span  >*</span><br>
+                    <input type="radio" name="marital" value="Single" required>Single
+                    <input type="radio" name="marital" value="Married" required>Married                    
+                </label><br>
+
+                <label for="spouse-name">Spouse Name (if applicable) <br>
+                    <input type="text" id="spouse-name" class="input-field" placeholder="Enter spouse name">
+                </label><br><br>
+
+                <!-- <input type="submit" class="btn" value="Submit"> -->
+            <!-- </form> -->
+        </fieldset>
+        
+        <fieldset class="employee-details">
+            <legend><h3>Employee Details</h3></legend>
+            <!-- <form id="employee-details-form"> -->
+                <label for="department">Department <span  >*</span><br>
+                    <select id="department" class="input-field" required>
+                        <option value="" disabled selected>Select Department</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                    </select>
+                </label><br>
+
+                <label for="experience">Years of Experience <br>
+                    <input type="number" id="experience" class="input-field" placeholder="Enter years of experience" min="0">
+                </label><br>
+
+                <label>Skills: <br>
+                    <input type="checkbox" value="HTML">HTML
+                    <input type="checkbox" value="CSS">CSS
+                    <input type="checkbox" value="JavaScript">JavaScript
+                    <input type="checkbox" value="SQL">SQL
+                </label><br>
+               
+                <label for="certifications">Certifications <br>
+                    <textarea id="certifications" class="input-field" placeholder="List Your Certifications" rows="4" cols="30"></textarea>
+                </label><br>
+
+                <label for="profile-pic">Profile Picture <br>
+                    <input type="file" id="profile-pic" class="input-field" accept=".jpg, .jpeg, .png"><br>
+                    <small class="note">Allowed formats: JPG, PNG</small>
+                </label><br><br>
+
+                <!-- <input type="submit" class="btn" value="Submit"> -->
+       
+        </fieldset>
+
+        <fieldset class="emergency-contact">
+            <legend><h3>Emergency Contact</h3></legend>
+            <label for="contact-name">Contact Name <span  >*</span><br>
+                <input type="text" id="contact-name" class="input-field" placeholder="Enter contact name" required>
+            </label><br>
+            
+            <label for="contact-phone">Contact Phone <span  >*</span><br>
+                <input type="tel" id="contact-phone" class="input-field" placeholder="Enter contact phone" required>
+            </label><br>
+            
+            <label for="relationship">Relationship <span  >*</span><br>
+                <input type="text" id="relationship" class="input-field" placeholder="Enter relationship (e.g., Parent)" required>
+            </label>
+        </fieldset>
+        
+        <fieldset class="address-details">
+            <legend><h3>Address Details</h3></legend>
+            <label for="address">Address <span  >*</span><br>
+                <textarea id="address" class="input-field" placeholder="Enter your address" required></textarea>
+            </label>
+        </fieldset>
+        
+        <fieldset class="login-details">
+            <legend><h3>Login Details</h3></legend>
+            <label for="username">Username <span  >*</span><br>
+                <input type="text" id="username" class="input-field" placeholder="Choose a username" required>
+            </label><br>
+            
+            <label for="password">Password <span  >*</span><br>
+                <input type="password" id="password" class="input-field" placeholder="Enter password" required>
+            </label><br>
+            
+            <label for="confirm-password">Confirm Password <span  >*</span><br>
+                <input type="password" id="confirm-password" class="input-field" placeholder="Re-enter password" required>
+            </label>
+            
+        </fieldset>
+        
+        <br>
+        <button type="submit" class="btn">Register</button>
+        <button type="reset" class ="btn" onclick="alert('Are you sure you want to clear the form?')">Clear Form</button>
+    </form>
+    </section>
+</body>
+</html>

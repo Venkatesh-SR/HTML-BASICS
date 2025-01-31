@@ -1,0 +1,89 @@
+body{
+    background-color:#f7dfe8 ;
+    color: #9d82ac ;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+
+}
+ label ,.note{
+    font-weight: bolder;
+    padding-bottom:10px;
+}
+
+input{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    border: solid 1px #4f156f;
+    background-color: #e3d6ef87;
+}
+.note{
+    position: relative;
+    top: -10px;
+}
+input::placeholder{
+color: #927097;
+}
+input[type="submit"]{
+    background-color: #4f156f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn {
+    background-color: #4f156f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+span{
+    color: rgb(190, 4, 4);
+}
+
+input[type="radio"] {
+    accent-color:#b36ba9; /* Changes the color when selected */
+}
+input[type="checkbox"] {
+    accent-color: #b36ba9;
+}
+
+textarea{
+    margin: 0;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: #bdb5c487;
+}
+
+select{
+    margin: 0;
+    padding: 3px;
+    background-color: #e3d6ef87;
+    border: solid 1px #4f156f;
+    border-radius: 10px;
+    color: #927097;
+
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #e3d6ef87; 
+    border: solid 1px #4f156f;
+    border-radius: 5px;
+    color:#7b5f7f;
+}
+
+.input-field{
+width:25% ;
+}
+
+.input-field:focus {
+    background-color: rgb(198, 134, 191); /* Highlight when typing */
+}
+.input-field:not(:placeholder-shown){
+    background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+
+}
